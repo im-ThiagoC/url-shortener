@@ -1,1 +1,15 @@
-GET http://localhost:3333/teste
+POST http://localhost:8000/api/links
+Content-Type: application/json
+
+
+{
+    "code": "Google",
+    "url": "https://www.goodgle.com"
+}
+
+
+###
+GET http://localhost:8000/api/links
+
+###
+GET http://localhost:8000/Google
