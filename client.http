@@ -3,7 +3,7 @@ Content-Type: application/json
 
 
 {
-    "code": "Gooogle",
+    "code": "google",
     "url": "https://www.google.com"
 }
 
@@ -12,7 +12,10 @@ Content-Type: application/json
 GET http://localhost:8000/api/links
 
 ###
-GET http://localhost:8000/Gooogle
+GET http://localhost:8000/google
 
 ###
 GET http://localhost:8000/api/analytics
+
+###
+GET http://localhost:8000

@@ -8,6 +8,10 @@ const app = fastify()
 
 // GET, POST, PUT, DELETE, PATCH
 
+app.get('/', async () => {
+    return { hello: 'world' }
+})
+
 app.get('/api/links', async () => {
     const result = await sql/*sql*/`
         SELECT *
@@ -104,4 +108,5 @@ app.listen({
 }).then(() => {
     console.log("Server is running on port 8000")
 })
+
 
